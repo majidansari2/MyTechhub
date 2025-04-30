@@ -1,0 +1,396 @@
+* {
+  scrollbar-width: none;
+}
+
+body {
+  background-color: rgb(171, 171, 235);
+}
+
+/*This is a Footer part css design*/
+
+footer {
+  height: 16%;
+  border: 5px solid transparent;
+  border-top: 5px solid red;
+  border-right: 5px solid blue;
+  border-bottom: 5px solid green;
+  border-left: 5px solid yellow;
+  animation: spin 1s linear infinite;
+}
+
+#footers {
+  display: flex;
+  color: rgb(152, 195, 233);
+  background-color: rgb(12, 10, 10);
+  height: 15cm;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, red, blue);
+  border-image-slice: 1;
+}
+
+#links {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 25px;
+  justify-content: center;
+
+}
+
+.img {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+
+  text-decoration: none;
+  color: black;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.img:hover {
+  opacity: 0.5;
+}
+
+
+#dev {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#candf {
+  width: 40%;
+  padding-left: 7%;
+}
+
+#follow {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding-left: 0%;
+
+}
+
+#f {
+  padding-left: 15%;
+  height: 20px;
+  width: fit-content;
+  /*text-align: center;*/
+  line-height: 20px;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+#contect {
+  padding: 20px;
+}
+
+#contect_us {
+  width: 60%;
+  height: auto;
+  font-size: large;
+}
+
+.cu {
+  padding-left: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-size: x-large;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#sme {
+  margin-top: 25px;
+  font-size: large;
+  height: fit-content;
+}
+
+#info_box {
+  align-items: center;
+  margin-top: 20px;
+  overflow: scroll;
+  padding-left: 3%;
+  scrollbar-width: none;
+  height: 89%;
+  padding-right: none;
+
+}
+
+#info_head {
+  font-size: x-larger;
+  padding-left: 40%;
+  margin-left: 0%;
+}
+
+
+/* This is a Header part css design*/
+header {
+  background-color: rgb(209, 222, 222);
+  height: 16%;
+  border: 5px solid transparent;
+  border-top: 5px solid red;
+  border-right: 5px solid blue;
+  border-bottom: 5px solid green;
+  border-left: 5px solid yellow;
+  animation: spin 1s linear infinite;
+}
+
+#head_img {
+  display: flex;
+  justify-content: center;
+  background-color: #363333;
+  border-radius: 55px;
+}
+
+
+#ErMajid_techhub_main {
+  height: 100px;
+  width: 900px;
+}
+
+
+
+
+
+/* Logo container styled like a link */
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  gap: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect */
+.logo-link:hover {
+  background-color: #eaeaea;
+  cursor: pointer;
+}
+
+/* Logo image */
+.logo-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Logo text */
+.logo-text {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#toggle_buttom_and_logo {
+  display: flex;
+  justify-content: center;
+}
+
+
+/*Toggle buttom*/
+#toggle_buttom {
+  background-color: black;
+  padding-left: 5%;
+  border-radius: 25px;
+  height: 70px;
+}
+
+#tmb {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+
+
+/* This is a main part css design*/
+main {
+  background-color: rgb(209, 222, 222);
+  height: 68%;
+  border: 5px solid transparent;
+  border-top: 5px solid red;
+  border-right: 5px solid blue;
+  border-bottom: 5px solid green;
+  border-left: 5px solid yellow;
+  animation: spin 1s linear infinite;
+}
+
+
+
+#c,
+#cpp,
+#python,
+#html,
+#css,
+#javascript,
+#nodejs,
+#expressjs,
+#mangodb,
+#angular {
+  background-color: rgb(211, 200, 187);
+  color: blue;
+  overflow: scroll;
+  padding-left: 2%;
+  scrollbar-width: none;
+  margin: 10px;
+  height: 21%;
+  width: 45%;
+}
+
+#coding_container {
+  height: 46%;
+  width: 100%;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.coding_text {
+  background-color: rgb(246, 239, 231);
+  color: black;
+  overflow: scroll;
+  padding-left: 2%;
+  scrollbar-width: none;
+  margin: 5px;
+  height: 50%;
+  width: 100%;
+  border-radius: 15px;
+
+}
+
+.c_lang,
+.cplusplus,
+.py,
+.js,
+.nodejs,
+.expressjs,
+.mangodb,
+.angular,
+.html,
+.css {
+  display: flex;
+  justify-content: center;
+  height: 21%;
+}
+
+.cpp1,
+.intro {
+  height: 40vh;
+  /* Makes it fit within most of screen height */
+  overflow-y: auto;
+  /* Adds vertical scroll */
+  overflow-x: hidden;
+  word-wrap: break-word;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  /* Optional: for visual clarity */
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+#intro {
+  word-wrap: break-word;
+  /* Breaks long words if needed */
+  white-space: normal;
+  /* Allows wrapping */
+  overflow-wrap: break-word;
+  width: 100%;
+}
+
+
+#syl_c {
+  font-size: 200%;
+  text-underline-offset: 5px;
+  background-color: #333;
+  color: #f9f9f9;
+  border-radius: 8px;
+}
+
+
+
+/* video section*/
+.c_lang_video,
+.cpp_lang_video {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.video_of_c,
+.video_of_cpp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  /* Adds vertical scroll */
+  overflow-x: hidden;
+  word-wrap: break-word;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  /* Optional: for visual clarity */
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  border-radius: 11px;
+  background-color: rgb(190, 189, 189);
+}
+
+
+/*  c Language Notes  */
+#c_notes,
+#cpp_notes {
+  font-size: x-large;
+  background-color: #656464;
+  border-radius: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+
+.chapter_c,
+.chapter_c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* rectangular box under content*/
+.box {
+  width: 300px;
+  height: 150px;
+  border: 2px solid black;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+table , tr , td {
+  border:1px solid black;
+}
+
+table{
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+tr , td{
+  padding: 10px;
+  text-align: center;
+}

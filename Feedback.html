@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback_form</title>
+    <link rel="stylesheet" href="Feedback.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+
+        <a href="file:///D:/jdk/JS_code_HTML_CSS/@ErMajid/@ErMajid.html" class="logo-link">
+            <img src="/D:\jdk\JS_code_HTML_CSS\@ErMajid\MyTechHub_logo.jpeg" alt="Logo" class="logo-img">
+            <span class="logo-text">@ErMajid</span>
+        </a>
+
+
+
+        <div id="Rating">
+            <h2>Rate This Service Platform</h2>
+            <div class="stars">
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1">&#9733;</label>
+            </div>
+
+            <div id="rating-value">Your rating: 0</div>
+
+        </div>
+        <div id="Feedback">
+            <h1>Your Valuable Feedback</h1>
+            <textarea placeholder="Share your experience" rows="5" cols="100" id="feedback"
+                maxlength="1500"></textarea><br>
+            <span id="char_count">1500 characters remaining</span><br><br>
+            <button id="feedback_submit_button">Submit</button>
+        </div>
+
+        <script>
+            const stars = document.querySelectorAll('input[name="rating"]');
+            const output = document.getElementById('rating-value');
+
+            stars.forEach(star => {
+                star.addEventListener('change', () => {
+                    output.textContent = `Your rating: ${star.value}`;
+                });
+            });
+
+
+
+
+            const textarea = document.getElementById("feedback");
+            const charCount = document.getElementById("char_count");
+            const maxLength = 1500;
+
+            textarea.addEventListener("input", () => {
+                const remaining = maxLength - textarea.value.length;
+                charCount.textContent = `${remaining} characters remaining`;
+            });
+
+            // Optional: Prevent submitting empty or too long input
+            document.getElementById("feedback_submit_button").addEventListener("click", () => {
+                const content = textarea.value.trim();
+
+                if (content.length === 0) {
+                    alert("Feedback cannot be empty.");
+                } else if (content.length > maxLength) {
+                    alert("Feedback exceeds the 1500 character limit.");
+                } else {
+                    alert("Thank you for your feedback!");
+                    // You could add form submission code here
+                }
+            });
+
+
+            //feedback submition conformation
+            document.getElementById("feedback_submit_button").addEventListener("click", function () {
+                let feedbackText = document.getElementById("feedback").value.trim(); // Get the text from textarea
+
+                if (feedbackText === "") {
+                    alert("Please enter your feedback before submitting.");
+                    return;
+                }
+
+                let confirmation = confirm("Are you sure you want to submit this feedback?\n\n" + feedbackText);
+
+                if (confirmation) {
+                    alert("Thank you for your feedback!");
+                    document.getElementById("feedback").value = ""; // Clear the textarea after submission
+                }
+            });
+        </script>
+
+    </main>
+    <footer>
+        <div id="dev">
+            <pre>Designed by <span class="developed-by"><b><big>Khalid Ansari </big></b></span></pre>
+        </div>
+
+    </footer>
+</body>
+
+</html>

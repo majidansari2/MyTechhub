@@ -1,0 +1,111 @@
+textarea {
+    resize: none;
+    width: 600px;
+    height: 250px;
+    scrollbar-width: none;
+    overflow: scroll;
+    background-color:rgb(225, 226, 227);
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    text-align: center;
+    background: linear-gradient(to bottom right, #de92c8, #77a2ec)
+
+    ;
+}
+
+.stars {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    font-size: 2rem;
+}
+
+.stars input {
+    display: none;
+}
+
+.stars label {
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.stars input:checked~label,
+.stars label:hover,
+.stars label:hover~label {
+    color: gold;
+}
+
+#rating-value {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+#dev {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+
+#feedback{
+    font-size: large;
+}
+
+#feedback_submit_button{
+height: 40px;
+width: 95px;
+border-radius: 10px;
+font-size: larger;
+background-color: #d6dbe3;
+}
+#feedback_submit_button:hover{
+    opacity: 0.70;
+}
+
+
+
+
+  
+  /* Logo container styled like a link */
+  .logo-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+  }
+  
+  /* Hover effect */
+  .logo-link:hover {
+    background-color: #eaeaea;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  /* Logo image */
+  .logo-img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  
+  /* Logo text */
+  .logo-text {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  #toggle_buttom_and_logo{
+   display: flex;
+   justify-content: center;
+  }
+  
