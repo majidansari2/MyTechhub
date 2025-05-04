@@ -9,7 +9,11 @@ body {
 
 
 /*  Display View  */
-@media screen and (max-width: 600px){};
+@media screen and (max-width: 600px){
+  html{
+    border: 5px solid black;
+  }
+};
 
 /*This is a Footer part css design*/
 
