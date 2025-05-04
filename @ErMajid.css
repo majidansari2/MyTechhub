@@ -265,18 +265,17 @@ main {
 .coding_text {
   background-color: rgb(246, 239, 231);
   color: black;
-  overflow: scroll;
+  /*overflow: scroll;*/
+  padding: 1rem;
   padding-left: 2%;
   scrollbar-width: none;
   margin: 5px;
   height: 50%;
-  width: 100%;
   border-radius: 15px;
 
 
 
   max-width: 100%;
-  padding: 1rem;
   font-family: monospace;
   overflow-x: auto;
   white-space: pre-wrap;
