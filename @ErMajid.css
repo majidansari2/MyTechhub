@@ -9,11 +9,11 @@ body {
 
 
 /*  Display View  */
-@media screen and (min-width:1080 px) {
-  .coding_text{
-    display: flex;
+@media (max-width: 600px) {
+  .coding_text {
+    font-size: 0.9rem;
+    padding: 0.75rem;
   }
-  
 }
 
 /*This is a Footer part css design*/
