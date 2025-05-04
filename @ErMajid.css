@@ -6,6 +6,16 @@ body {
   background-color: rgb(171, 171, 235);
 }
 
+
+
+/*  Display View  */
+@media screen and (min-width:1080 px) {
+  .coding_text{
+    display: flex;
+  }
+  
+}
+
 /*This is a Footer part css design*/
 
 footer {
