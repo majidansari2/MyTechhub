@@ -9,7 +9,7 @@ body {
 
 
 /*  Display View  */
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .coding_text {
     font-size: 0.9rem;
     padding: 0.75rem;
