@@ -9,7 +9,7 @@ body {
 
 
 @media screen and (min-width:1080px) {
-.screen_view{
+.screen_size{
     display: flex;
 }}
 
