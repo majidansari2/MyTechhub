@@ -8,6 +8,12 @@ body {
 }
 
 
+@media screen and (min-width:1080px) {
+.container{
+    display: flex;
+}}
+
+
 /*    Display View 
 @media screen and (max-width: 600px){
   html{
