@@ -155,13 +155,8 @@ a:hover {
   height:auto;
   width:auto;
 }
-
-#support{
-  display:flex;
-  align-item:center;
-}
   
-.me{
+#support,#mobile_number,#email{
 display:flex;
   align-item:center;
 }
