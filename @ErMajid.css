@@ -118,6 +118,7 @@ a:hover {
 }
 
 #sme {
+  align-item:center;
   padding-left:3%;
   flex-wrap: wrap;
   margin-top: 25px;
@@ -141,13 +142,15 @@ a:hover {
 }
 
 #info_head {
+  display:flex;
+  align-item:center;
   font-size: x-larger;
   padding-left: 40%;
   margin-left: 0%;
 }
 
 #info_para{
-  justify-content:center;
+  display:flex;
   align-item:center;
   height:auto;
   width:auto;
