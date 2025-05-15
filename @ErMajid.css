@@ -179,6 +179,8 @@ header {
   justify-content: center;
   background-color: #363333;
   border-radius: 55px;
+  width:auto;
+  object-fit:cover;
 }
 
 
