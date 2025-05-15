@@ -4,28 +4,22 @@
 
 body {
   background-color: rgb(171, 171, 235);
-  margin: 0;
 }
 
 
-@media screen and (min-width:1080px) {
-.screen_size{
+
+/*  Display View  */
+@media screen and (min-width:1080 px) {
+  .coding_text{
     display: flex;
-}}
-
-
-/*    Display View 
-@media screen and (max-width: 600px){
-  html{
-    border: 5px solid black;
   }
-};
- */
+  
+}
 
 /*This is a Footer part css design*/
 
 footer {
-  height: 16%;
+  height: auto;
   border: 5px solid transparent;
   border-top: 5px solid red;
   border-right: 5px solid blue;
@@ -36,9 +30,10 @@ footer {
 
 #footers {
   display: flex;
+  flex-wrap: wrap;
   color: rgb(152, 195, 233);
   background-color: rgb(12, 10, 10);
-  height: 15cm;
+  height: auto;
   border: 5px solid transparent;
   border-image: linear-gradient(to right, red, blue);
   border-image-slice: 1;
@@ -123,9 +118,14 @@ a:hover {
 }
 
 #sme {
+  flex-wrap: wrap;
   margin-top: 25px;
   font-size: large;
   height: fit-content;
+}
+
+#info_box_dev{
+  display: flex;
 }
 
 #info_box {
@@ -281,17 +281,10 @@ main {
   scrollbar-width: none;
   margin: 5px;
   height: 50%;
+  width: 100%;
   border-radius: 15px;
 
-
-   overflow-x: auto;
-  font-family: monospace;
-  white-space: pre-wrap;
-  word-break: break-word;
-  box-sizing: border-box;
 }
-
-
 
 .c_lang,
 .cplusplus,
