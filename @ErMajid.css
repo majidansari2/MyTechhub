@@ -145,6 +145,11 @@ a:hover {
   margin-left: 0%;
 }
 
+#info_para{
+  height:auto;
+  width:auto;
+}
+
 
 /* This is a Header part css design*/
 header {
